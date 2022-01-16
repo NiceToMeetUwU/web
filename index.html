@@ -1,36 +1,53 @@
 <html>
+
   <head>
+      <link rel = "stylesheet" href="hehe.css">
       <title>hi</title>
   </head>
-  <body>
-      <header>
-          <h1>goodmorning</h1>
-          <h1>just test</h1>
-          <h6>smaller goodmorning</h6>
-
+  <body >
+    <div class="bg">
+        <img src="9c25048e77b4d0b0b9eb617d1ff5e3e0.png">
+    </div>
+      <header >
+          <center><h1 id ="top_text">OOO是gay的鐵證</h1></center></header> 
+          <div class="top"></div>
       </header>
       <main>
-        <section>
-            <h2>About this</h2>
-            <p>just here to say hi just here to say hi just here to say hi
-              just here to say hi just here to say hi just here to say hi</p>
-        </section>
-        <section>
-            <article>
-                <a href="https://www.thesocialdilemma.com/"><h3>go to google</h3></a>
-                <<h3>Hii asasasasasasasasasasas</h3>
-            </article>
-            <article>
-                <a href="#"><h3>go to yahoo</h3></a>
-                <<h3>Hii asasasasasasasasasasas</h3>
-            </article>
-            <article>
-                <a href="#"><h3>go to bing</h3></a>
-                <<h3>Hii asasasasasasasasasasas</h3>
-                
-            </article>
+        <div class="inputs">
+            <input id="name" placeholder="hehe">
+            <script>
+                var text = document.getElementById("top_text")
+                var i = document.getElementById("name");
+                i.onclick = showalert;
+                console.log("hello")
+                function showalert(event){
+                    document.addEventListener('keypress', run);
+                }
+                function run(e){
+                    if(e.code == "Enter"){
+                        console.log()
+                        text.textContent =i.value+"是gay的鐵證";
+                    }
+                }
+            </script>
+            
+            <form class="buttons">
+                    <input placeholder="請輸入紀錄" type="datetime-local">
+                    <textarea></textarea><br>
+                    <a class="rainbow"><button type="button"style="width:60px;height:40px;background-color:transparent;border:none"  ><h3>新增</button></a></h3>
+                    <a class="rainbow"><button type="button"style="width:60px;height:40px;background-color:transparent;border:none"  ><h3>查詢</button></a></h3>
+                    
+            </form>
+        </div>
+        
+        <div>
+
+        </div>
+
+      </main>   
       <footer>
-          <center>&copy;2021
+          <div class = "foot"><center>2022 陳育斌 楊子慶 </div>
       </footer>
+
   </body>
 </html>
